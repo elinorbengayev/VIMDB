@@ -1,16 +1,29 @@
 {
-  "name": "coding-assignment",
+  "name": "vimdb",
   "version": "1.0.0",
-  "description": "Vi's Coding Assignment (Engineering Team)",
+  "description": "Vi's Coding Assignment (Engineering Team). Movies API, especially for Marvel fans.",
   "main": "src/index.js",
-  "author": "Alon Kaduri <alonk@vi.co>",
+  "author": "Elinor Bengayev <elinorb240@gmail.com>",
   "scripts": {
-    "test": "jest"
+    "start": "node src/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
+  "type": "module",
   "devDependencies": {
-    "jest": "^28.1.0"
+    "jest": "^28.1.3"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "supertest": "^7.1.0",
+    "winston": "^3.17.0"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage",
+    "testMatch": ["**/test/**/*.test.js"],
+    "testEnvironment": "node",
+    "transform": {}
   }
 }

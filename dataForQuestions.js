@@ -1,4 +1,4 @@
-const movies = { // [movie:id]
+ export const movies = { // [movie:id]
     'Fantastic Four (2005)': 9738,
     'Fantastic Four: Rise of the Silver Surfer': 1979,
     'Iron Man': 1726,
@@ -27,7 +27,7 @@ const movies = { // [movie:id]
     'Spider-Man: Far From Home': 429617
 }
 
-const actors = [
+ export const actors = [
     'Robert Downey Jr.',
     'Chris Evans',
     'Mark Ruffalo',
@@ -52,8 +52,3 @@ const actors = [
     'Samuel L. Jackson',
     'Dave Bautista',
 ]
-
-module.exports = {
-    movies,
-    actors
-}
